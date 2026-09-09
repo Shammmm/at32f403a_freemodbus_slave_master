@@ -15,6 +15,7 @@
 *.userprefs
 /project/src/backup
 /project/inc/backup
+/.vscode/secrets.json
 
 # Mono auto generated files
 mono_crash.*

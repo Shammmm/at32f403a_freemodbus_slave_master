@@ -1,0 +1,11 @@
+{
+  "projectName": "at32f403a_freemodbus_slave_master",
+  "chip": "AT32F403AVGT7",
+  "series": "AT32F403A",
+  "productLine": "Mainstream",
+  "flash": "1024KB",
+  "sram": "96KB",
+  "frequency": "240MHz",
+  "core": "M4F",
+  "package": "LQFP100"
+}

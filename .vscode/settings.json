@@ -1,6 +1,5 @@
 {
-  "VS Code AI configuration.authorization_data": "MDE5ZjIyNTAtOGE2ZC03Yzg4LThlYzgtYTBiYjFjMWIzN2I2OjQyZTkzMjg1LTc5YzUtNGNkMy1iOGZmLWU4MDBmZWEzMDkzOQ==",
-  "gigacommit.authorizationKey": "MDE5ZjIyNTAtOGE2ZC03Yzg4LThlYzgtYTBiYjFjMWIzN2I2OjQyZTkzMjg1LTc5YzUtNGNkMy1iOGZmLWU4MDBmZWEzMDkzOQ==",
+
   "C_Cpp.errorSquiggles": "enabled",
   "at32.tools.gccArmPath": "C:\\Users\\Altium\\ppData\\Local\\at32-tools\\gcc-arm-none-eabi\\V10.3\\bin"
   

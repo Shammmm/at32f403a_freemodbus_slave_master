@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "AT32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/modbus",
+                "${workspaceFolder}/modbus_port",
+                "${workspaceFolder}/modbus/include",
+                "${workspaceFolder}/modbus/functions",
+                "${workspaceFolder}/modbus/rtu"
+                
+  
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${workspaceFolder}/modbus",
+                    "${workspaceFolder}/modbus_port",
+                    "${workspaceFolder}/modbus/include",
+                    "${workspaceFolder}/modbus/functions",
+                    "${workspaceFolder}/modbus/rtu"
+
+
+                ]
+            },
+            "compilerPath": "arm-none-eabi-gcc.exe",
+            "defines": [
+                "AT32F403AVGT7",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
