@@ -13,6 +13,8 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+/project/src/backup
+/project/inc/backup
 
 # Mono auto generated files
 mono_crash.*

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <WorkBenchVersion>
+        <Version>V1.2.05</Version>
+    </WorkBenchVersion>
+    <MCUInfo>
+        <MCUSerials>AT32F403A</MCUSerials>
+        <MCUName>AT32F403AVGT7</MCUName>
+        <MCUPackage>LQFP100</MCUPackage>
+    </MCUInfo>
+    <CRM>
+        <Mode>
+            <ModeSub name="HEXT" value="HEXT-External-Oscillator"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="HEXT" value="HEXT_CRYSTAL"/>
+        </Parameters>
+    </CRM>
+    <DEBUG>
+        <Mode>
+            <ModeSub name="Debug interface" value="SWD"/>
+        </Mode>
+    </DEBUG>
+    <SYSTEM>
+        <Mode>
+            <ModeSub name="Time_Base" value="SysTick"/>
+            <ModeSub name="UART_Printf" value="USART1"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Delay_Mode" value="Interrupt"/>
+        </Parameters>
+    </SYSTEM>
+    <TMR2>
+        <Mode>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="239"/>
+            <ParametersSub name="Period" value="3999"/>
+        </Parameters>
+    </TMR2>
+    <TMR3>
+        <Mode>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="DividerValue" value="239"/>
+            <ParametersSub name="Period" value="3999"/>
+        </Parameters>
+    </TMR3>
+    <USART1>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="BaudRate" value="9600"/>
+            <ParametersSub name="RealBaudRate" value="9600"/>
+        </Parameters>
+    </USART1>
+    <USART2>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="BaudRate" value="9600"/>
+            <ParametersSub name="RealBaudRate" value="9600"/>
+            <ParametersSub name="STOPbitnum" value="USART_STOP_2_BIT"/>
+        </Parameters>
+    </USART2>
+    <USART6>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="BaudRate" value="9600"/>
+            <ParametersSub name="RealBaudRate" value="9600"/>
+        </Parameters>
+    </USART6>
+    <NVIC>
+        <PendSV_Handler>1;15;0;0;0;1</PendSV_Handler>
+        <SysTick_Handler>1;15;0;0;0;1</SysTick_Handler>
+        <FLASH_IRQHandler>0;5;0;0;0;0</FLASH_IRQHandler>
+        <CRM_IRQHandler>0;5;0;0;0;0</CRM_IRQHandler>
+        <TMR2_GLOBAL_IRQHandler>1;5;0;0;0;1</TMR2_GLOBAL_IRQHandler>
+        <TMR3_GLOBAL_IRQHandler>1;0;0;0;0;1</TMR3_GLOBAL_IRQHandler>
+        <USART1_IRQHandler>0;5;0;0;0;0</USART1_IRQHandler>
+        <USART2_IRQHandler>1;0;0;0;0;1</USART2_IRQHandler>
+        <USART6_IRQHandler>1;5;0;0;0;1</USART6_IRQHandler>
+    </NVIC>
+    <GPIO>
+        <Signal SignalName="USART6_TX" PinName="PC6">
+            <Parameters name="GPIO_DriverCapability" value="GPIO_DRIVE_STRENGTH_STRONGER"/>
+        </Signal>
+        <Signal SignalName="GPIO_Output" PinName="PD4">
+            <Parameters name="GPIO_DriverCapability" value="GPIO_DRIVE_STRENGTH_STRONGER"/>
+            <Parameters name="Label" value="COM_TX"/>
+        </Signal>
+        <Signal SignalName="USART2_TX" PinName="PD5">
+            <Parameters name="GPIO_DriverCapability" value="GPIO_DRIVE_STRENGTH_STRONGER"/>
+        </Signal>
+    </GPIO>
+    <ClockConfiguration>
+        <rtcsel>0</rtcsel>
+        <hext>8.000000</hext>
+        <hextdiv>2</hextdiv>
+        <pllhextdiv>0</pllhextdiv>
+        <pllrcs>0</pllrcs>
+        <pllmult>30</pllmult>
+        <sclkselect>1</sclkselect>
+        <ahbdiv>1</ahbdiv>
+        <apb1div>4</apb1div>
+        <apb2div>2</apb2div>
+        <usbdiv>4.0</usbdiv>
+        <hicktousb>1</hicktousb>
+        <hicktosclk>0</hicktosclk>
+        <clkout>0</clkout>
+        <clkoutdiv>1</clkoutdiv>
+        <adcdiv>6</adcdiv>
+        <systicsel>1</systicsel>
+    </ClockConfiguration>
+    <PINInfo>
+        <PinSub pinname="HEXT_IN" signalname="CRM_HEXT_IN" signaltype="2"/>
+        <PinSub pinname="HEXT_OUT" signalname="CRM_HEXT_OUT" signaltype="2"/>
+        <PinSub pinname="PC6" signalname="USART6_TX" signaltype="2"/>
+        <PinSub pinname="PC7" signalname="USART6_RX" signaltype="2"/>
+        <PinSub pinname="PA9" signalname="USART1_TX" signaltype="2"/>
+        <PinSub pinname="PA10" signalname="USART1_RX" signaltype="2"/>
+        <PinSub pinname="PA13" signalname="DEBUG_JTMS_SWDIO" signaltype="2"/>
+        <PinSub pinname="PA14" signalname="DEBUG_JTCK_SWCLK" signaltype="2"/>
+        <PinSub pinname="PD4" signalname="GPIO_Output" signaltype="3"/>
+        <PinSub pinname="PD5" signalname="USART2_TX" signaltype="3"/>
+        <PinSub pinname="PD6" signalname="USART2_RX" signaltype="3"/>
+    </PINInfo>
+    <ProjectInfomation>
+        <ProjectName>at32f403a_freemodbus_slave_master</ProjectName>
+        <ProjectLocation>D:/vscode-workspace</ProjectLocation>
+        <ToolchainIDE>CMake</ToolchainIDE>
+        <ARMCompiler>0</ARMCompiler>
+        <BackupCode>true</BackupCode>
+        <KeepUserCode>true</KeepUserCode>
+        <NotUsedPinAnalog>false</NotUsedPinAnalog>
+        <CodeSplitIP>true</CodeSplitIP>
+        <AddNecessaryFileFlag>true</AddNecessaryFileFlag>
+        <DeletePriviousFiles>false</DeletePriviousFiles>
+        <MinHeapSize>0x200</MinHeapSize>
+        <MinStackSize>0x400</MinStackSize>
+        <UseFirmware>true</UseFirmware>
+        <PackageVersion>V2.2.2</PackageVersion>
+    </ProjectInfomation>
+    <FunctionRankInfo>
+        <RankSub RankNum="1" FixPosFlag="TRUE" FuncName="wk_system_clock_config" InstanceName="CRM" CodeSection="config_system_clock_rtthread" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="2" FixPosFlag="TRUE" FuncName="wk_periph_clock_config" InstanceName="CRM" CodeSection="config periph clock" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="4" FixPosFlag="TRUE" FuncName="wk_debug_config" InstanceName="DEBUG" CodeSection="debug function" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="7" FixPosFlag="TRUE" FuncName="wk_nvic_config" InstanceName="NVIC" CodeSection="config nvic" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="8" FixPosFlag="TRUE" FuncName="wk_timebase_init" InstanceName="SYSTEM" CodeSection="config timebase" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="9" FixPosFlag="TRUE" FuncName="wk_gpio_config" InstanceName="GPIO" CodeSection="gpio function" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="32" FixPosFlag="FALSE" FuncName="wk_usart1_init" InstanceName="USART1" CodeSection="usart1 function" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="33" FixPosFlag="FALSE" FuncName="wk_usart2_init" InstanceName="USART2" CodeSection="usart2 function" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="37" FixPosFlag="FALSE" FuncName="wk_usart6_init" InstanceName="USART6" CodeSection="usart6 function" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="57" FixPosFlag="FALSE" FuncName="wk_tmr2_init" InstanceName="TMR2" CodeSection="tmr2 function" MainDoNotCallFlag="FALSE"/>
+        <RankSub RankNum="58" FixPosFlag="FALSE" FuncName="wk_tmr3_init" InstanceName="TMR3" CodeSection="tmr3 function" MainDoNotCallFlag="FALSE"/>
+    </FunctionRankInfo>
+</Root>

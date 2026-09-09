@@ -1,0 +1,6 @@
+D:/vscode-workspace/at32f403a_freemodbus_slave_master/build/CMakeFiles/at32f403a_freemodbus_slave_master.dir
+D:/vscode-workspace/at32f403a_freemodbus_slave_master/build/CMakeFiles/edit_cache.dir
+D:/vscode-workspace/at32f403a_freemodbus_slave_master/build/CMakeFiles/rebuild_cache.dir
+D:/vscode-workspace/at32f403a_freemodbus_slave_master/build/cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir
+D:/vscode-workspace/at32f403a_freemodbus_slave_master/build/cmake/at32_workbench/CMakeFiles/edit_cache.dir
+D:/vscode-workspace/at32f403a_freemodbus_slave_master/build/cmake/at32_workbench/CMakeFiles/rebuild_cache.dir
