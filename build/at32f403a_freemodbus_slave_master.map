@@ -21,7 +21,7 @@ c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/
 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
                               c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o) (_printf_i)
 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-printf.o)
-                              CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj (printf)
+                              CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj (printf)
 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
                               CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj (puts)
 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-setvbuf.o)
@@ -4775,6 +4775,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
  .data          0x00000000        0x0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
  .bss           0x00000000        0x0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .text.modbus_task
+                0x00000000        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
  .debug_macro   0x00000000      0xa78 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
  .debug_macro   0x00000000       0x5e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
@@ -5277,500 +5279,497 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
  .text.systick_clock_source_config
                 0x08001354       0x3c cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
                 0x08001354                systick_clock_source_config
- .text.main     0x08001390       0xac CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .text.main     0x08001390      0x138 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
                 0x08001390                main
  .text.eMBMasterRegInputCB
-                0x0800143c       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
-                0x0800143c                eMBMasterRegInputCB
+                0x080014c8       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+                0x080014c8                eMBMasterRegInputCB
  .text.eMBMasterRegHoldingCB
-                0x0800145e       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
-                0x0800145e                eMBMasterRegHoldingCB
+                0x080014ea       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+                0x080014ea                eMBMasterRegHoldingCB
  .text.eMBMasterRegCoilsCB
-                0x0800148a       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
-                0x0800148a                eMBMasterRegCoilsCB
+                0x08001516       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+                0x08001516                eMBMasterRegCoilsCB
  .text.eMBMasterRegDiscreteCB
-                0x080014b6       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
-                0x080014b6                eMBMasterRegDiscreteCB
- .text._getpid  0x080014d8       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x080014d8                _getpid
- .text._kill    0x080014e8       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x080014e8                _kill
- .text._exit    0x08001508       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x08001508                _exit
- .text._read    0x0800151c       0x3a CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x0800151c                _read
- .text._close   0x08001556       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x08001556                _close
- .text._fstat   0x0800156e       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x0800156e                _fstat
- .text._isatty  0x0800158e       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x0800158e                _isatty
- .text._lseek   0x080015a4       0x1a CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
-                0x080015a4                _lseek
- *fill*         0x080015be        0x2 
- .text._sbrk    0x080015c0       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
-                0x080015c0                _sbrk
+                0x08001542       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+                0x08001542                eMBMasterRegDiscreteCB
+ .text._getpid  0x08001564       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x08001564                _getpid
+ .text._kill    0x08001574       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x08001574                _kill
+ .text._exit    0x08001594       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x08001594                _exit
+ .text._read    0x080015a8       0x3a CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x080015a8                _read
+ .text._close   0x080015e2       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x080015e2                _close
+ .text._fstat   0x080015fa       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x080015fa                _fstat
+ .text._isatty  0x0800161a       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x0800161a                _isatty
+ .text._lseek   0x08001630       0x1a CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+                0x08001630                _lseek
+ *fill*         0x0800164a        0x2 
+ .text._sbrk    0x0800164c       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+                0x0800164c                _sbrk
  .text.__NVIC_GetPriorityGrouping
-                0x0800162c       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+                0x080016b8       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
  .text.__NVIC_SetPriority
-                0x08001648       0x54 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+                0x080016d4       0x54 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
  .text.NVIC_EncodePriority
-                0x0800169c       0x66 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
- *fill*         0x08001702        0x2 
+                0x08001728       0x66 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ *fill*         0x0800178e        0x2 
  .text.wk_system_clock_config
-                0x08001704       0xa4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
-                0x08001704                wk_system_clock_config
+                0x08001790       0xa4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+                0x08001790                wk_system_clock_config
  .text.wk_periph_clock_config
-                0x080017a8       0x70 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
-                0x080017a8                wk_periph_clock_config
+                0x08001834       0x70 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+                0x08001834                wk_periph_clock_config
  .text.wk_nvic_config
-                0x08001818       0xfa CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
-                0x08001818                wk_nvic_config
+                0x080018a4       0xfa CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+                0x080018a4                wk_nvic_config
  .text.NMI_Handler
-                0x08001912        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001912                NMI_Handler
+                0x0800199e        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x0800199e                NMI_Handler
  .text.HardFault_Handler
-                0x08001920        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001920                HardFault_Handler
+                0x080019ac        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019ac                HardFault_Handler
  .text.MemManage_Handler
-                0x08001926        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001926                MemManage_Handler
+                0x080019b2        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019b2                MemManage_Handler
  .text.BusFault_Handler
-                0x0800192c        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x0800192c                BusFault_Handler
+                0x080019b8        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019b8                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001932        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001932                UsageFault_Handler
+                0x080019be        0x6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019be                UsageFault_Handler
  .text.SVC_Handler
-                0x08001938        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001938                SVC_Handler
+                0x080019c4        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019c4                SVC_Handler
  .text.DebugMon_Handler
-                0x08001946        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001946                DebugMon_Handler
+                0x080019d2        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019d2                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001954        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001954                PendSV_Handler
+                0x080019e0        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019e0                PendSV_Handler
  .text.SysTick_Handler
-                0x08001962        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001962                SysTick_Handler
+                0x080019ee        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019ee                SysTick_Handler
  .text.TMR2_GLOBAL_IRQHandler
-                0x0800196e       0x26 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x0800196e                TMR2_GLOBAL_IRQHandler
+                0x080019fa       0x26 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x080019fa                TMR2_GLOBAL_IRQHandler
  .text.TMR3_GLOBAL_IRQHandler
-                0x08001994       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x08001994                TMR3_GLOBAL_IRQHandler
+                0x08001a20       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x08001a20                TMR3_GLOBAL_IRQHandler
  .text.USART2_IRQHandler
-                0x080019bc        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x080019bc                USART2_IRQHandler
+                0x08001a48        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x08001a48                USART2_IRQHandler
  .text.USART6_IRQHandler
-                0x080019c8        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
-                0x080019c8                USART6_IRQHandler
+                0x08001a54        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+                0x08001a54                USART6_IRQHandler
  .text.wk_timebase_increase
-                0x080019d4       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
-                0x080019d4                wk_timebase_increase
+                0x08001a60       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+                0x08001a60                wk_timebase_increase
  .text.wk_timebase_get
-                0x080019f0       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
-                0x080019f0                wk_timebase_get
+                0x08001a7c       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+                0x08001a7c                wk_timebase_get
  .text.wk_delay_ms
-                0x08001a08       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
-                0x08001a08                wk_delay_ms
+                0x08001a94       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+                0x08001a94                wk_delay_ms
  .text.wk_timebase_init
-                0x08001a40       0x50 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
-                0x08001a40                wk_timebase_init
+                0x08001acc       0x50 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+                0x08001acc                wk_timebase_init
  .text.wk_timebase_handler
-                0x08001a90        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
-                0x08001a90                wk_timebase_handler
- .text._write   0x08001a9c       0x60 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
-                0x08001a9c                _write
+                0x08001b1c        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+                0x08001b1c                wk_timebase_handler
+ .text._write   0x08001b28       0x60 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+                0x08001b28                _write
  .text.wk_debug_config
-                0x08001afc       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
-                0x08001afc                wk_debug_config
+                0x08001b88       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+                0x08001b88                wk_debug_config
  .text.wk_tmr2_init
-                0x08001b10       0x52 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
-                0x08001b10                wk_tmr2_init
- *fill*         0x08001b62        0x2 
+                0x08001b9c       0x52 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+                0x08001b9c                wk_tmr2_init
+ *fill*         0x08001bee        0x2 
  .text.wk_tmr3_init
-                0x08001b64       0x48 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
-                0x08001b64                wk_tmr3_init
+                0x08001bf0       0x48 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+                0x08001bf0                wk_tmr3_init
  .text.wk_usart1_init
-                0x08001bac       0xa8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
-                0x08001bac                wk_usart1_init
+                0x08001c38       0xa8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+                0x08001c38                wk_usart1_init
  .text.wk_usart2_init
-                0x08001c54       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
-                0x08001c54                wk_usart2_init
+                0x08001ce0       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+                0x08001ce0                wk_usart2_init
  .text.wk_usart6_init
-                0x08001cf0       0x90 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
-                0x08001cf0                wk_usart6_init
+                0x08001d7c       0x90 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+                0x08001d7c                wk_usart6_init
  .text.wk_gpio_config
-                0x08001d80       0x40 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
-                0x08001d80                wk_gpio_config
+                0x08001e0c       0x40 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+                0x08001e0c                wk_gpio_config
  .text.Reset_Handler
-                0x08001dc0       0x48 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
-                0x08001dc0                Reset_Handler
+                0x08001e4c       0x48 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
+                0x08001e4c                Reset_Handler
  .text.Default_Handler
-                0x08001e08        0x2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
-                0x08001e08                SDIO1_IRQHandler
-                0x08001e08                XMC_IRQHandler
-                0x08001e08                EXINT2_IRQHandler
-                0x08001e08                USBFS_L_CAN1_RX0_IRQHandler
-                0x08001e08                UART8_IRQHandler
-                0x08001e08                SPI4_IRQHandler
-                0x08001e08                I2C2_EVT_IRQHandler
-                0x08001e08                TMR1_OVF_TMR10_IRQHandler
-                0x08001e08                TMR8_TRG_HALL_TMR14_IRQHandler
-                0x08001e08                USBFS_H_CAN1_TX_IRQHandler
-                0x08001e08                I2C1_ERR_IRQHandler
-                0x08001e08                EXINT9_5_IRQHandler
-                0x08001e08                EMAC_IRQHandler
-                0x08001e08                CAN2_RX1_IRQHandler
-                0x08001e08                TMR5_GLOBAL_IRQHandler
-                0x08001e08                SDIO2_IRQHandler
-                0x08001e08                ADC1_2_IRQHandler
-                0x08001e08                SPI1_IRQHandler
-                0x08001e08                TAMPER_IRQHandler
-                0x08001e08                CAN2_RX0_IRQHandler
-                0x08001e08                DMA2_Channel2_IRQHandler
-                0x08001e08                DMA1_Channel4_IRQHandler
-                0x08001e08                TMR8_CH_IRQHandler
-                0x08001e08                EXINT0_IRQHandler
-                0x08001e08                USART3_IRQHandler
-                0x08001e08                RTC_IRQHandler
-                0x08001e08                DMA1_Channel7_IRQHandler
-                0x08001e08                CAN1_RX1_IRQHandler
-                0x08001e08                UART5_IRQHandler
-                0x08001e08                ADC3_IRQHandler
-                0x08001e08                ACC_IRQHandler
-                0x08001e08                EMAC_WKUP_IRQHandler
-                0x08001e08                DMA2_Channel1_IRQHandler
-                0x08001e08                EXINT3_IRQHandler
-                0x08001e08                DMA1_Channel6_IRQHandler
-                0x08001e08                UART4_IRQHandler
-                0x08001e08                DMA1_Channel1_IRQHandler
-                0x08001e08                Default_Handler
-                0x08001e08                USBFS_MAPH_IRQHandler
-                0x08001e08                TMR7_GLOBAL_IRQHandler
-                0x08001e08                CAN1_SE_IRQHandler
-                0x08001e08                CAN2_TX_IRQHandler
-                0x08001e08                I2C3_ERR_IRQHandler
-                0x08001e08                SPI3_I2S3EXT_IRQHandler
-                0x08001e08                TMR1_BRK_TMR9_IRQHandler
-                0x08001e08                USBFS_MAPL_IRQHandler
-                0x08001e08                TMR8_BRK_TMR12_IRQHandler
-                0x08001e08                TMR1_TRG_HALL_TMR11_IRQHandler
-                0x08001e08                DMA1_Channel5_IRQHandler
-                0x08001e08                TMR4_GLOBAL_IRQHandler
-                0x08001e08                EXINT4_IRQHandler
-                0x08001e08                CAN2_SE_IRQHandler
-                0x08001e08                DMA2_Channel6_7_IRQHandler
-                0x08001e08                PVM_IRQHandler
-                0x08001e08                I2C3_EVT_IRQHandler
-                0x08001e08                DMA1_Channel3_IRQHandler
-                0x08001e08                I2C1_EVT_IRQHandler
-                0x08001e08                TMR8_OVF_TMR13_IRQHandler
-                0x08001e08                TMR6_GLOBAL_IRQHandler
-                0x08001e08                EXINT1_IRQHandler
-                0x08001e08                RTCAlarm_IRQHandler
-                0x08001e08                DMA2_Channel4_5_IRQHandler
-                0x08001e08                UART7_IRQHandler
-                0x08001e08                DMA1_Channel2_IRQHandler
-                0x08001e08                FLASH_IRQHandler
-                0x08001e08                SPI2_I2S2EXT_IRQHandler
-                0x08001e08                I2C2_ERR_IRQHandler
-                0x08001e08                USBFSWakeUp_IRQHandler
-                0x08001e08                USART1_IRQHandler
-                0x08001e08                TMR1_CH_IRQHandler
-                0x08001e08                CRM_IRQHandler
-                0x08001e08                EXINT15_10_IRQHandler
-                0x08001e08                WWDT_IRQHandler
-                0x08001e08                DMA2_Channel3_IRQHandler
- *fill*         0x08001e0a        0x2 
+                0x08001e94        0x2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
+                0x08001e94                SDIO1_IRQHandler
+                0x08001e94                XMC_IRQHandler
+                0x08001e94                EXINT2_IRQHandler
+                0x08001e94                USBFS_L_CAN1_RX0_IRQHandler
+                0x08001e94                UART8_IRQHandler
+                0x08001e94                SPI4_IRQHandler
+                0x08001e94                I2C2_EVT_IRQHandler
+                0x08001e94                TMR1_OVF_TMR10_IRQHandler
+                0x08001e94                TMR8_TRG_HALL_TMR14_IRQHandler
+                0x08001e94                USBFS_H_CAN1_TX_IRQHandler
+                0x08001e94                I2C1_ERR_IRQHandler
+                0x08001e94                EXINT9_5_IRQHandler
+                0x08001e94                EMAC_IRQHandler
+                0x08001e94                CAN2_RX1_IRQHandler
+                0x08001e94                TMR5_GLOBAL_IRQHandler
+                0x08001e94                SDIO2_IRQHandler
+                0x08001e94                ADC1_2_IRQHandler
+                0x08001e94                SPI1_IRQHandler
+                0x08001e94                TAMPER_IRQHandler
+                0x08001e94                CAN2_RX0_IRQHandler
+                0x08001e94                DMA2_Channel2_IRQHandler
+                0x08001e94                DMA1_Channel4_IRQHandler
+                0x08001e94                TMR8_CH_IRQHandler
+                0x08001e94                EXINT0_IRQHandler
+                0x08001e94                USART3_IRQHandler
+                0x08001e94                RTC_IRQHandler
+                0x08001e94                DMA1_Channel7_IRQHandler
+                0x08001e94                CAN1_RX1_IRQHandler
+                0x08001e94                UART5_IRQHandler
+                0x08001e94                ADC3_IRQHandler
+                0x08001e94                ACC_IRQHandler
+                0x08001e94                EMAC_WKUP_IRQHandler
+                0x08001e94                DMA2_Channel1_IRQHandler
+                0x08001e94                EXINT3_IRQHandler
+                0x08001e94                DMA1_Channel6_IRQHandler
+                0x08001e94                UART4_IRQHandler
+                0x08001e94                DMA1_Channel1_IRQHandler
+                0x08001e94                Default_Handler
+                0x08001e94                USBFS_MAPH_IRQHandler
+                0x08001e94                TMR7_GLOBAL_IRQHandler
+                0x08001e94                CAN1_SE_IRQHandler
+                0x08001e94                CAN2_TX_IRQHandler
+                0x08001e94                I2C3_ERR_IRQHandler
+                0x08001e94                SPI3_I2S3EXT_IRQHandler
+                0x08001e94                TMR1_BRK_TMR9_IRQHandler
+                0x08001e94                USBFS_MAPL_IRQHandler
+                0x08001e94                TMR8_BRK_TMR12_IRQHandler
+                0x08001e94                TMR1_TRG_HALL_TMR11_IRQHandler
+                0x08001e94                DMA1_Channel5_IRQHandler
+                0x08001e94                TMR4_GLOBAL_IRQHandler
+                0x08001e94                EXINT4_IRQHandler
+                0x08001e94                CAN2_SE_IRQHandler
+                0x08001e94                DMA2_Channel6_7_IRQHandler
+                0x08001e94                PVM_IRQHandler
+                0x08001e94                I2C3_EVT_IRQHandler
+                0x08001e94                DMA1_Channel3_IRQHandler
+                0x08001e94                I2C1_EVT_IRQHandler
+                0x08001e94                TMR8_OVF_TMR13_IRQHandler
+                0x08001e94                TMR6_GLOBAL_IRQHandler
+                0x08001e94                EXINT1_IRQHandler
+                0x08001e94                RTCAlarm_IRQHandler
+                0x08001e94                DMA2_Channel4_5_IRQHandler
+                0x08001e94                UART7_IRQHandler
+                0x08001e94                DMA1_Channel2_IRQHandler
+                0x08001e94                FLASH_IRQHandler
+                0x08001e94                SPI2_I2S2EXT_IRQHandler
+                0x08001e94                I2C2_ERR_IRQHandler
+                0x08001e94                USBFSWakeUp_IRQHandler
+                0x08001e94                USART1_IRQHandler
+                0x08001e94                TMR1_CH_IRQHandler
+                0x08001e94                CRM_IRQHandler
+                0x08001e94                EXINT15_10_IRQHandler
+                0x08001e94                WWDT_IRQHandler
+                0x08001e94                DMA2_Channel3_IRQHandler
+ *fill*         0x08001e96        0x2 
  .text.eMBMasterInit
-                0x08001e0c       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x08001e0c                eMBMasterInit
+                0x08001e98       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08001e98                eMBMasterInit
  .text.eMBMasterEnable
-                0x08001ee0       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x08001ee0                eMBMasterEnable
+                0x08001f6c       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08001f6c                eMBMasterEnable
  .text.eMBMasterPoll
-                0x08001f18      0x29c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x08001f18                eMBMasterPoll
+                0x08001fa4      0x29c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08001fa4                eMBMasterPoll
  .text.vMBMasterSetCBRunInMasterMode
-                0x080021b4       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x080021b4                vMBMasterSetCBRunInMasterMode
+                0x08002240       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08002240                vMBMasterSetCBRunInMasterMode
  .text.ucMBMasterGetDestAddress
-                0x080021d4       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x080021d4                ucMBMasterGetDestAddress
+                0x08002260       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08002260                ucMBMasterGetDestAddress
  .text.vMBMasterSetDestAddress
-                0x080021ec       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x080021ec                vMBMasterSetDestAddress
+                0x08002278       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08002278                vMBMasterSetDestAddress
  .text.eMBMasterGetErrorType
-                0x0800220c       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x0800220c                eMBMasterGetErrorType
+                0x08002298       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x08002298                eMBMasterGetErrorType
  .text.vMBMasterSetErrorType
-                0x08002224       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
-                0x08002224                vMBMasterSetErrorType
+                0x080022b0       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+                0x080022b0                vMBMasterSetErrorType
  .text.eMBMasterRTUInit
-                0x08002244       0x70 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002244                eMBMasterRTUInit
+                0x080022d0       0x70 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080022d0                eMBMasterRTUInit
  .text.eMBMasterRTUStart
-                0x080022b4       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x080022b4                eMBMasterRTUStart
+                0x08002340       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08002340                eMBMasterRTUStart
  .text.eMBMasterRTUStop
-                0x080022dc       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x080022dc                eMBMasterRTUStop
+                0x08002368       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08002368                eMBMasterRTUStop
  .text.eMBMasterRTUReceive
-                0x080022f8       0x94 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x080022f8                eMBMasterRTUReceive
+                0x08002384       0x94 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08002384                eMBMasterRTUReceive
  .text.eMBMasterRTUSend
-                0x0800238c       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x0800238c                eMBMasterRTUSend
+                0x08002418       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08002418                eMBMasterRTUSend
  .text.xMBMasterRTUReceiveFSM
-                0x08002460       0xe8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002460                xMBMasterRTUReceiveFSM
+                0x080024ec       0xe8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080024ec                xMBMasterRTUReceiveFSM
  .text.xMBMasterRTUTransmitFSM
-                0x08002548       0xd8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002548                xMBMasterRTUTransmitFSM
+                0x080025d4       0xd8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080025d4                xMBMasterRTUTransmitFSM
  .text.xMBMasterRTUTimerExpired
-                0x08002620      0x120 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002620                xMBMasterRTUTimerExpired
+                0x080026ac      0x120 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080026ac                xMBMasterRTUTimerExpired
  .text.vMBMasterGetPDUSndBuf
-                0x08002740       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002740                vMBMasterGetPDUSndBuf
+                0x080027cc       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080027cc                vMBMasterGetPDUSndBuf
  .text.vMBMasterSetPDUSndLength
-                0x08002760       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002760                vMBMasterSetPDUSndLength
+                0x080027ec       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080027ec                vMBMasterSetPDUSndLength
  .text.usMBMasterGetPDUSndLength
-                0x08002780       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002780                usMBMasterGetPDUSndLength
+                0x0800280c       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x0800280c                usMBMasterGetPDUSndLength
  .text.vMBMasterSetCurTimerMode
-                0x08002798       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x08002798                vMBMasterSetCurTimerMode
+                0x08002824       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08002824                vMBMasterSetCurTimerMode
  .text.xMBMasterRequestIsBroadcast
-                0x080027b8       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
-                0x080027b8                xMBMasterRequestIsBroadcast
+                0x08002844       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08002844                xMBMasterRequestIsBroadcast
  .text.eMBMasterFuncReadCoils
-                0x080027d0       0xd6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
-                0x080027d0                eMBMasterFuncReadCoils
+                0x0800285c       0xd6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+                0x0800285c                eMBMasterFuncReadCoils
  .text.eMBMasterFuncWriteCoil
-                0x080028a6       0xa6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
-                0x080028a6                eMBMasterFuncWriteCoil
+                0x08002932       0xa6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+                0x08002932                eMBMasterFuncWriteCoil
  .text.eMBMasterFuncWriteMultipleCoils
-                0x0800294c       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
-                0x0800294c                eMBMasterFuncWriteMultipleCoils
+                0x080029d8       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+                0x080029d8                eMBMasterFuncWriteMultipleCoils
  .text.eMBMasterFuncReadDiscreteInputs
-                0x08002a20       0xd6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
-                0x08002a20                eMBMasterFuncReadDiscreteInputs
+                0x08002aac       0xd6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+                0x08002aac                eMBMasterFuncReadDiscreteInputs
  .text.eMBMasterReqWriteHoldingRegister
-                0x08002af6       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
-                0x08002af6                eMBMasterReqWriteHoldingRegister
+                0x08002b82       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+                0x08002b82                eMBMasterReqWriteHoldingRegister
  .text.eMBMasterFuncWriteHoldingRegister
-                0x08002b92       0x6a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
-                0x08002b92                eMBMasterFuncWriteHoldingRegister
+                0x08002c1e       0x6a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+                0x08002c1e                eMBMasterFuncWriteHoldingRegister
  .text.eMBMasterFuncWriteMultipleHoldingRegister
-                0x08002bfc       0xb2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
-                0x08002bfc                eMBMasterFuncWriteMultipleHoldingRegister
+                0x08002c88       0xb2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+                0x08002c88                eMBMasterFuncWriteMultipleHoldingRegister
  .text.eMBMasterFuncReadHoldingRegister
-                0x08002cae       0xb8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
-                0x08002cae                eMBMasterFuncReadHoldingRegister
+                0x08002d3a       0xb8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+                0x08002d3a                eMBMasterFuncReadHoldingRegister
  .text.eMBMasterFuncReadWriteMultipleHoldingRegister
-                0x08002d66      0x100 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
-                0x08002d66                eMBMasterFuncReadWriteMultipleHoldingRegister
+                0x08002df2      0x100 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+                0x08002df2                eMBMasterFuncReadWriteMultipleHoldingRegister
  .text.eMBMasterFuncReadInputRegister
-                0x08002e66       0xb8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
-                0x08002e66                eMBMasterFuncReadInputRegister
- *fill*         0x08002f1e        0x2 
+                0x08002ef2       0xb8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+                0x08002ef2                eMBMasterFuncReadInputRegister
+ *fill*         0x08002faa        0x2 
  .text.vMBMasterPortSerialEnable
-                0x08002f20       0x80 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
-                0x08002f20                vMBMasterPortSerialEnable
+                0x08002fac       0x80 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x08002fac                vMBMasterPortSerialEnable
  .text.xMBMasterPortSerialInit
-                0x08002fa0       0x26 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
-                0x08002fa0                xMBMasterPortSerialInit
- *fill*         0x08002fc6        0x2 
+                0x0800302c       0x26 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x0800302c                xMBMasterPortSerialInit
+ *fill*         0x08003052        0x2 
  .text.xMBMasterPortSerialPutByte
-                0x08002fc8       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
-                0x08002fc8                xMBMasterPortSerialPutByte
+                0x08003054       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x08003054                xMBMasterPortSerialPutByte
  .text.xMBMasterPortSerialGetByte
-                0x08002ff0       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
-                0x08002ff0                xMBMasterPortSerialGetByte
+                0x0800307c       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x0800307c                xMBMasterPortSerialGetByte
  .text.prvvUARTTxReadyISR
-                0x08003018       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x080030a4       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
  .text.prvvUARTRxISR
-                0x0800302c       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x080030b8       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
  .text.vUSARTHandler_m
-                0x08003040       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
-                0x08003040                vUSARTHandler_m
+                0x080030cc       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+                0x080030cc                vUSARTHandler_m
  .text.xMBMasterPortTimersInit
-                0x08003098       0x24 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
-                0x08003098                xMBMasterPortTimersInit
+                0x08003124       0x24 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x08003124                xMBMasterPortTimersInit
  .text.vMBMasterPortTimersT35Enable
-                0x080030bc       0x50 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
-                0x080030bc                vMBMasterPortTimersT35Enable
+                0x08003148       0x50 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x08003148                vMBMasterPortTimersT35Enable
  .text.vMBMasterPortTimersConvertDelayEnable
-                0x0800310c        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
-                0x0800310c                vMBMasterPortTimersConvertDelayEnable
+                0x08003198        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x08003198                vMBMasterPortTimersConvertDelayEnable
  .text.vMBMasterPortTimersRespondTimeoutEnable
-                0x0800311a        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
-                0x0800311a                vMBMasterPortTimersRespondTimeoutEnable
+                0x080031a6        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x080031a6                vMBMasterPortTimersRespondTimeoutEnable
  .text.vMBMasterPortTimersDisable
-                0x08003128       0x40 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
-                0x08003128                vMBMasterPortTimersDisable
+                0x080031b4       0x40 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x080031b4                vMBMasterPortTimersDisable
  .text.prvvTIMERExpiredISR
-                0x08003168       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x080031f4       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
  .text.ex_m_prvvTIMERExpiredISR
-                0x0800317c        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
-                0x0800317c                ex_m_prvvTIMERExpiredISR
+                0x08003208        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+                0x08003208                ex_m_prvvTIMERExpiredISR
  .text.xMBMasterPortEventInit
-                0x08003188       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x08003188                xMBMasterPortEventInit
+                0x08003214       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x08003214                xMBMasterPortEventInit
  .text.xMBMasterPortEventPost
-                0x080031a4       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x080031a4                xMBMasterPortEventPost
+                0x08003230       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x08003230                xMBMasterPortEventPost
  .text.xMBMasterPortEventGet
-                0x080031d0       0x3c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x080031d0                xMBMasterPortEventGet
+                0x0800325c       0x3c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x0800325c                xMBMasterPortEventGet
  .text.vMBMasterOsResInit
-                0x0800320c        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x0800320c                vMBMasterOsResInit
+                0x08003298        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x08003298                vMBMasterOsResInit
  .text.xMBMasterRunResTake
-                0x0800321a       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x0800321a                xMBMasterRunResTake
+                0x080032a6       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x080032a6                xMBMasterRunResTake
  .text.vMBMasterRunResRelease
-                0x08003230        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x08003230                vMBMasterRunResRelease
+                0x080032bc        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x080032bc                vMBMasterRunResRelease
  .text.vMBMasterErrorCBRespondTimeout
-                0x0800323e       0x1e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x0800323e                vMBMasterErrorCBRespondTimeout
+                0x080032ca       0x1e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x080032ca                vMBMasterErrorCBRespondTimeout
  .text.vMBMasterErrorCBReceiveData
-                0x0800325c       0x1e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x0800325c                vMBMasterErrorCBReceiveData
+                0x080032e8       0x1e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x080032e8                vMBMasterErrorCBReceiveData
  .text.vMBMasterErrorCBExecuteFunction
-                0x0800327a       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x0800327a                vMBMasterErrorCBExecuteFunction
+                0x08003306       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x08003306                vMBMasterErrorCBExecuteFunction
  .text.vMBMasterCBRequestScuuess
-                0x0800329a        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x0800329a                vMBMasterCBRequestScuuess
+                0x08003326        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x08003326                vMBMasterCBRequestScuuess
  .text.eMBMasterWaitRequestFinish
-                0x080032a8       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
-                0x080032a8                eMBMasterWaitRequestFinish
- .text.eMBInit  0x08003300       0xf8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
-                0x08003300                eMBInit
+                0x08003334       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+                0x08003334                eMBMasterWaitRequestFinish
+ .text.eMBInit  0x0800338c       0xf8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+                0x0800338c                eMBInit
  .text.eMBEnable
-                0x080033f8       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
-                0x080033f8                eMBEnable
- .text.eMBPoll  0x08003430      0x18c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
-                0x08003430                eMBPoll
+                0x08003484       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+                0x08003484                eMBEnable
+ .text.eMBPoll  0x080034bc      0x18c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+                0x080034bc                eMBPoll
  .text.eMBRTUInit
-                0x080035bc       0x78 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x080035bc                eMBRTUInit
+                0x08003648       0x78 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x08003648                eMBRTUInit
  .text.eMBRTUStart
-                0x08003634       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x08003634                eMBRTUStart
+                0x080036c0       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x080036c0                eMBRTUStart
  .text.eMBRTUStop
-                0x0800365c       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x0800365c                eMBRTUStop
+                0x080036e8       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x080036e8                eMBRTUStop
  .text.eMBRTUReceive
-                0x08003678       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x08003678                eMBRTUReceive
+                0x08003704       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x08003704                eMBRTUReceive
  .text.eMBRTUSend
-                0x08003714       0xc8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x08003714                eMBRTUSend
+                0x080037a0       0xc8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x080037a0                eMBRTUSend
  .text.xMBRTUReceiveFSM
-                0x080037dc       0xd0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x080037dc                xMBRTUReceiveFSM
+                0x08003868       0xd0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x08003868                xMBRTUReceiveFSM
  .text.xMBRTUTransmitFSM
-                0x080038ac       0xb0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x080038ac                xMBRTUTransmitFSM
+                0x08003938       0xb0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x08003938                xMBRTUTransmitFSM
  .text.xMBRTUTimerT35Expired
-                0x0800395c       0x8c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
-                0x0800395c                xMBRTUTimerT35Expired
+                0x080039e8       0x8c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+                0x080039e8                xMBRTUTimerT35Expired
  .text.usMBCRC16
-                0x080039e8       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
-                0x080039e8                usMBCRC16
+                0x08003a74       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+                0x08003a74                usMBCRC16
  .text.eMBFuncReadCoils
-                0x08003a54       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
-                0x08003a54                eMBFuncReadCoils
+                0x08003ae0       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+                0x08003ae0                eMBFuncReadCoils
  .text.eMBFuncWriteCoil
-                0x08003b52       0xa6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
-                0x08003b52                eMBFuncWriteCoil
+                0x08003bde       0xa6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+                0x08003bde                eMBFuncWriteCoil
  .text.eMBFuncWriteMultipleCoils
-                0x08003bf8       0xce CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
-                0x08003bf8                eMBFuncWriteMultipleCoils
+                0x08003c84       0xce CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+                0x08003c84                eMBFuncWriteMultipleCoils
  .text.eMBFuncReadDiscreteInputs
-                0x08003cc6       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
-                0x08003cc6                eMBFuncReadDiscreteInputs
+                0x08003d52       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+                0x08003d52                eMBFuncReadDiscreteInputs
  .text.eMBFuncWriteHoldingRegister
-                0x08003dc4       0x6a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
-                0x08003dc4                eMBFuncWriteHoldingRegister
+                0x08003e50       0x6a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+                0x08003e50                eMBFuncWriteHoldingRegister
  .text.eMBFuncWriteMultipleHoldingRegister
-                0x08003e2e       0xb2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
-                0x08003e2e                eMBFuncWriteMultipleHoldingRegister
+                0x08003eba       0xb2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+                0x08003eba                eMBFuncWriteMultipleHoldingRegister
  .text.eMBFuncReadHoldingRegister
-                0x08003ee0       0xde CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
-                0x08003ee0                eMBFuncReadHoldingRegister
+                0x08003f6c       0xde CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+                0x08003f6c                eMBFuncReadHoldingRegister
  .text.eMBFuncReadWriteMultipleHoldingRegister
-                0x08003fbe      0x154 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
-                0x08003fbe                eMBFuncReadWriteMultipleHoldingRegister
+                0x0800404a      0x154 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+                0x0800404a                eMBFuncReadWriteMultipleHoldingRegister
  .text.eMBFuncReadInputRegister
-                0x08004112       0xe4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
-                0x08004112                eMBFuncReadInputRegister
- *fill*         0x080041f6        0x2 
+                0x0800419e       0xe4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+                0x0800419e                eMBFuncReadInputRegister
+ *fill*         0x08004282        0x2 
  .text.eMBFuncReportSlaveID
-                0x080041f8       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
-                0x080041f8                eMBFuncReportSlaveID
+                0x08004284       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+                0x08004284                eMBFuncReportSlaveID
  .text.xMBUtilSetBits
-                0x08004230       0xd8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
-                0x08004230                xMBUtilSetBits
+                0x080042bc       0xd8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+                0x080042bc                xMBUtilSetBits
  .text.xMBUtilGetBits
-                0x08004308       0x74 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
-                0x08004308                xMBUtilGetBits
+                0x08004394       0x74 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+                0x08004394                xMBUtilGetBits
  .text.prveMBError2Exception
-                0x0800437c       0x44 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
-                0x0800437c                prveMBError2Exception
+                0x08004408       0x44 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+                0x08004408                prveMBError2Exception
  .text.vMBPortSerialEnable
-                0x080043c0       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
-                0x080043c0                vMBPortSerialEnable
+                0x0800444c       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x0800444c                vMBPortSerialEnable
  .text.xMBPortSerialInit
-                0x0800442c       0x26 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
-                0x0800442c                xMBPortSerialInit
- *fill*         0x08004452        0x2 
+                0x080044b8       0x26 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x080044b8                xMBPortSerialInit
+ *fill*         0x080044de        0x2 
  .text.xMBPortSerialPutByte
-                0x08004454       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
-                0x08004454                xMBPortSerialPutByte
+                0x080044e0       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x080044e0                xMBPortSerialPutByte
  .text.xMBPortSerialGetByte
-                0x0800447c       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
-                0x0800447c                xMBPortSerialGetByte
+                0x08004508       0x28 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x08004508                xMBPortSerialGetByte
  .text.prvvUARTTxReadyISR
-                0x080044a4       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x08004530       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
  .text.prvvUARTRxISR
-                0x080044b8       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x08004544       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
  .text.vUSARTHandler
-                0x080044cc       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
-                0x080044cc                vUSARTHandler
+                0x08004558       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+                0x08004558                vUSARTHandler
  .text.xMBPortTimersInit
-                0x08004524       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
-                0x08004524                xMBPortTimersInit
+                0x080045b0       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+                0x080045b0                xMBPortTimersInit
  .text.vMBPortTimersEnable
-                0x0800453c       0x32 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
-                0x0800453c                vMBPortTimersEnable
+                0x080045c8       0x32 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+                0x080045c8                vMBPortTimersEnable
  .text.vMBPortTimersDisable
-                0x0800456e       0x32 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
-                0x0800456e                vMBPortTimersDisable
+                0x080045fa       0x32 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+                0x080045fa                vMBPortTimersDisable
  .text.prvvTIMERExpiredISR
-                0x080045a0       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+                0x0800462c       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
  .text.ex_prvvTIMERExpiredISR
-                0x080045b4        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
-                0x080045b4                ex_prvvTIMERExpiredISR
+                0x08004640        0xc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+                0x08004640                ex_prvvTIMERExpiredISR
  .text.xMBPortEventInit
-                0x080045c0       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
-                0x080045c0                xMBPortEventInit
+                0x0800464c       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+                0x0800464c                xMBPortEventInit
  .text.xMBPortEventPost
-                0x080045dc       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
-                0x080045dc                xMBPortEventPost
+                0x08004668       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+                0x08004668                xMBPortEventPost
  .text.xMBPortEventGet
-                0x08004608       0x3c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
-                0x08004608                xMBPortEventGet
- .text.modbus_task
-                0x08004644       0x8c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
-                0x08004644                modbus_task
+                0x08004694       0x3c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+                0x08004694                xMBPortEventGet
  .text.eMBRegInputCB
                 0x080046d0       0x88 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
                 0x080046d0                eMBRegInputCB
@@ -5957,111 +5956,110 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
 .iplt           0x08005c7c        0x0
  .iplt          0x08005c7c        0x0 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08005c7c      0x800
+.rodata         0x08005c7c      0x7f8
                 0x08005c7c                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08005c7c       0x6b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- *fill*         0x08005ce7        0x1 
- .rodata        0x08005ce8      0x1b5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- *fill*         0x08005e9d        0x3 
- .rodata        0x08005ea0      0x10f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- *fill*         0x08005faf        0x1 
- .rodata        0x08005fb0       0x61 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
- *fill*         0x08006011        0x3 
- .rodata        0x08006014       0x9c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .rodata        0x08005c7c       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ *fill*         0x08005d7a        0x2 
+ .rodata        0x08005d7c      0x1b5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ *fill*         0x08005f31        0x3 
+ .rodata        0x08005f34      0x10f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ *fill*         0x08006043        0x1 
+ .rodata        0x08006044       0x61 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
  *(.rodata*)
+ *fill*         0x080060a5        0x3 
  .rodata._global_impure_ptr
-                0x080060b0        0x4 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
-                0x080060b0                _global_impure_ptr
+                0x080060a8        0x4 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x080060a8                _global_impure_ptr
  .rodata.sys_ahb_div_table.0
-                0x080060b4       0x10 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
+                0x080060ac       0x10 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
  .rodata.sclk_ahb_div_table.3
-                0x080060c4       0x10 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
+                0x080060bc       0x10 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .rodata.ahb_apb1_div_table.2
-                0x080060d4        0x8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
+                0x080060cc        0x8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .rodata.ahb_apb2_div_table.1
-                0x080060dc        0x8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
+                0x080060d4        0x8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .rodata.adc_div_table.0
-                0x080060e4        0x8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
+                0x080060dc        0x8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .rodata.__func__.3
-                0x080060ec       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x080060e4       0x14 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
  .rodata.__func__.2
-                0x08006100       0x17 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- *fill*         0x08006117        0x1 
+                0x080060f8       0x17 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ *fill*         0x0800610f        0x1 
  .rodata.__func__.1
-                0x08006118       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+                0x08006110       0x18 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
  .rodata.__func__.0
-                0x08006130       0x19 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- *fill*         0x08006149        0x3 
+                0x08006128       0x19 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ *fill*         0x08006141        0x3 
  .rodata.__func__.3
-                0x0800614c        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- *fill*         0x0800615a        0x2 
+                0x08006144        0xe CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ *fill*         0x08006152        0x2 
  .rodata.__func__.2
-                0x0800615c       0x11 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- *fill*         0x0800616d        0x3 
+                0x08006154       0x11 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ *fill*         0x08006165        0x3 
  .rodata.__func__.1
-                0x08006170       0x12 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- *fill*         0x08006182        0x2 
+                0x08006168       0x12 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ *fill*         0x0800617a        0x2 
  .rodata.__func__.0
-                0x08006184       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- *fill*         0x0800619a        0x2 
+                0x0800617c       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ *fill*         0x08006192        0x2 
  .rodata.aucCRCHi
-                0x0800619c      0x100 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+                0x08006194      0x100 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
  .rodata.aucCRCLo
-                0x0800629c      0x100 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+                0x08006294      0x100 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
  .rodata.__func__.0
-                0x0800639c        0xf CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+                0x08006394        0xf CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
  .rodata.__assert_func.str1.1
-                0x080063ab       0x3c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
+                0x080063a3       0x3c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
                                  0x3d (size before relaxing)
  .rodata._vfprintf_r.str1.1
-                0x080063e7       0x11 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x080063df       0x11 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x080063f8       0x22 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x0800641a        0x2 
+                0x080063f0       0x22 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x08006412        0x2 
  .rodata.__sf_fake_stderr
-                0x0800641c       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x0800641c                __sf_fake_stderr
+                0x08006414       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08006414                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0800643c       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x0800643c                __sf_fake_stdin
+                0x08006434       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08006434                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0800645c       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x0800645c                __sf_fake_stdout
-                0x0800647c                . = ALIGN (0x4)
+                0x08006454       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x08006454                __sf_fake_stdout
+                0x08006474                . = ALIGN (0x4)
 
-.rel.dyn        0x0800647c        0x0
- .rel.iplt      0x0800647c        0x0 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08006474        0x0
+ .rel.iplt      0x08006474        0x0 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800647c        0x0
-                0x0800647c                __exidx_start = .
+.ARM            0x08006474        0x0
+                0x08006474                __exidx_start = .
  *(.ARM.exidx*)
-                0x0800647c                __exidx_end = .
+                0x08006474                __exidx_end = .
 
-.preinit_array  0x0800647c        0x0
-                0x0800647c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08006474        0x0
+                0x08006474                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800647c                PROVIDE (__preinit_array_end = .)
+                0x08006474                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800647c        0x4
-                0x0800647c                PROVIDE (__init_array_start = .)
+.init_array     0x08006474        0x4
+                0x08006474                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800647c        0x4 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08006480                PROVIDE (__init_array_end = .)
+ .init_array    0x08006474        0x4 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08006478                PROVIDE (__init_array_end = .)
 
-.fini_array     0x08006480        0x4
+.fini_array     0x08006478        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08006480        0x4 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08006478        0x4 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x08006484                _sidata = LOADADDR (.data)
+                0x0800647c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x180 load address 0x08006484
+.data           0x20000000      0x180 load address 0x0800647c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -6101,7 +6099,7 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
                 0x08400000                _spim_init_base = LOADADDR (.spim)
                 0x00000000                _spim_init_length = SIZEOF (.spim)
 
-.igot.plt       0x20000180        0x0 load address 0x08006604
+.igot.plt       0x20000180        0x0 load address 0x080065fc
  .igot.plt      0x20000180        0x0 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .spim           0x08400000        0x0
@@ -6469,7 +6467,7 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
 LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_frame    0x00000000     0x3dd8
+.debug_frame    0x00000000     0x3ddc
  .debug_frame   0x00000000       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
  .debug_frame   0x0000002c       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
  .debug_frame   0x0000004c       0x54 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
@@ -6478,155 +6476,155 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
  .debug_frame   0x00000ef4      0x2f8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj
  .debug_frame   0x000011ec      0x4b8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj
  .debug_frame   0x000016a4      0x210 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
- .debug_frame   0x000018b4       0xd0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_frame   0x00001984      0x2ac CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_frame   0x00001c30       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
- .debug_frame   0x00001c64       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
- .debug_frame   0x00001d38      0x17c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_frame   0x00001eb4      0x14c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
- .debug_frame   0x00002000       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
- .debug_frame   0x0000202c       0x48 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
- .debug_frame   0x00002074       0x7c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
- .debug_frame   0x000020f0       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
- .debug_frame   0x00002124      0x1c4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_frame   0x000022e8      0x200 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- .debug_frame   0x000024e8       0xe8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
- .debug_frame   0x000025d0       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
- .debug_frame   0x00002628      0x130 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
- .debug_frame   0x00002758       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
- .debug_frame   0x000027b0       0xf8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
- .debug_frame   0x000028a8       0xe0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
- .debug_frame   0x00002988      0x198 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
- .debug_frame   0x00002b20       0xa0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
- .debug_frame   0x00002bc0       0xf0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
- .debug_frame   0x00002cb0      0x120 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- .debug_frame   0x00002dd0       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
- .debug_frame   0x00002e08       0x7c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
- .debug_frame   0x00002e84       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
- .debug_frame   0x00002eb8       0xa0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
- .debug_frame   0x00002f58       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
- .debug_frame   0x00002f8c       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
- .debug_frame   0x00002fe4       0x84 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
- .debug_frame   0x00003068       0xf8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
- .debug_frame   0x00003160       0xa8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
- .debug_frame   0x00003208       0x80 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
- .debug_frame   0x00003288       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
- .debug_frame   0x0000335c       0x40 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
- .debug_frame   0x0000339c       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x000033bc       0x64 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fprintf.o)
- .debug_frame   0x00003420       0x28 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00003448       0xac c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x000034f4       0x60 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00003554       0x74 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-printf.o)
- .debug_frame   0x000035c8       0x3c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
- .debug_frame   0x00003604       0x38 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-setvbuf.o)
- .debug_frame   0x0000363c       0x40 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x0000367c       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x000036a8       0x28 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-abort.o)
- .debug_frame   0x000036d0       0x5c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000372c      0x14c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x00003878       0x54 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x000038cc       0xb0 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
- .debug_frame   0x0000397c       0x58 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x000039d4       0x30 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x00003a04       0x38 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00003a3c       0x4c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00003a88       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00003ab4       0xcc c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signal.o)
- .debug_frame   0x00003b80       0x3c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signalr.o)
- .debug_frame   0x00003bbc       0x88 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x00003c44       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-writer.o)
- .debug_frame   0x00003c70       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-closer.o)
- .debug_frame   0x00003c9c       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fstatr.o)
- .debug_frame   0x00003cc8       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00003cf4       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lseekr.o)
- .debug_frame   0x00003d20       0x30 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x00003d50       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
- .debug_frame   0x00003d7c       0x5c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x000018b4       0xd8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_frame   0x0000198c      0x2ac CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_frame   0x00001c38       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_frame   0x00001c6c       0xd4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ .debug_frame   0x00001d40      0x17c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_frame   0x00001ebc      0x14c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+ .debug_frame   0x00002008       0x2c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+ .debug_frame   0x00002034       0x48 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+ .debug_frame   0x0000207c       0x7c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+ .debug_frame   0x000020f8       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+ .debug_frame   0x0000212c      0x1c4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_frame   0x000022f0      0x200 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ .debug_frame   0x000024f0       0xe8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+ .debug_frame   0x000025d8       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+ .debug_frame   0x00002630      0x130 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+ .debug_frame   0x00002760       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+ .debug_frame   0x000027b8       0xf8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_frame   0x000028b0       0xe0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+ .debug_frame   0x00002990      0x198 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+ .debug_frame   0x00002b28       0xa0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
+ .debug_frame   0x00002bc8       0xf0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+ .debug_frame   0x00002cb8      0x120 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ .debug_frame   0x00002dd8       0x38 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+ .debug_frame   0x00002e10       0x7c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+ .debug_frame   0x00002e8c       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+ .debug_frame   0x00002ec0       0xa0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+ .debug_frame   0x00002f60       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+ .debug_frame   0x00002f94       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+ .debug_frame   0x00002fec       0x84 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+ .debug_frame   0x00003070       0xf8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+ .debug_frame   0x00003168       0xa8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+ .debug_frame   0x00003210       0x80 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+ .debug_frame   0x00003290       0xd0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_frame   0x00003360       0x40 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
+ .debug_frame   0x000033a0       0x20 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000033c0       0x64 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fprintf.o)
+ .debug_frame   0x00003424       0x28 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000344c       0xac c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x000034f8       0x60 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00003558       0x74 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-printf.o)
+ .debug_frame   0x000035cc       0x3c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-puts.o)
+ .debug_frame   0x00003608       0x38 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-setvbuf.o)
+ .debug_frame   0x00003640       0x40 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00003680       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x000036ac       0x28 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-abort.o)
+ .debug_frame   0x000036d4       0x5c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00003730      0x14c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000387c       0x54 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x000038d0       0xb0 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+ .debug_frame   0x00003980       0x58 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x000039d8       0x30 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00003a08       0x38 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00003a40       0x4c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00003a8c       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00003ab8       0xcc c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signal.o)
+ .debug_frame   0x00003b84       0x3c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signalr.o)
+ .debug_frame   0x00003bc0       0x88 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00003c48       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x00003c74       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x00003ca0       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00003ccc       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00003cf8       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x00003d24       0x30 c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00003d54       0x2c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x00003d80       0x5c c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-reent.o)
 
-.debug_info     0x00000000    0x1a4f2
+.debug_info     0x00000000    0x1a4bc
  .debug_info    0x00000000     0x159a cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
  .debug_info    0x0000159a     0x2379 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .debug_info    0x00003913     0x26ce cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_tmr.c.obj
  .debug_info    0x00005fe1     0x1f6c cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj
  .debug_info    0x00007f4d     0x10ab cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj
  .debug_info    0x00008ff8      0x9e2 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
- .debug_info    0x000099da      0x416 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_info    0x00009df0      0x6b2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_info    0x0000a4a2      0x15f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
- .debug_info    0x0000a601      0xbf5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
- .debug_info    0x0000b1f6     0x100d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_info    0x0000c203      0x8d0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
- .debug_info    0x0000cad3       0xc4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
- .debug_info    0x0000cb97      0xfa9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
- .debug_info    0x0000db40     0x1c55 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
- .debug_info    0x0000f795      0xdb2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
- .debug_info    0x00010547       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
- .debug_info    0x00010569      0x7dc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_info    0x00010d45      0x820 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- .debug_info    0x00011565      0x598 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
- .debug_info    0x00011afd      0x32b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
- .debug_info    0x00011e28      0x6af CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
- .debug_info    0x000124d7      0x31c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
- .debug_info    0x000127f3     0x139e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
- .debug_info    0x00013b91     0x10be CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
- .debug_info    0x00014c4f      0x443 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
- .debug_info    0x00015092     0x1572 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
- .debug_info    0x00016604      0x72f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
- .debug_info    0x00016d33      0x696 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- .debug_info    0x000173c9      0x1ee CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
- .debug_info    0x000175b7      0x31e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
- .debug_info    0x000178d5      0x1eb CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
- .debug_info    0x00017ac0      0x392 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
- .debug_info    0x00017e52      0x1dc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
- .debug_info    0x0001802e      0x2fc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
- .debug_info    0x0001832a      0x2e6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
- .debug_info    0x00018610      0x84b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
- .debug_info    0x00018e5b      0xfc5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
- .debug_info    0x00019e20      0x22a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
- .debug_info    0x0001a04a      0x4a8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_info    0x000099da      0x432 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_info    0x00009e0c      0x6b2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_info    0x0000a4be      0x15f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_info    0x0000a61d      0xbf5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ .debug_info    0x0000b212     0x100d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_info    0x0000c21f      0x8d0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+ .debug_info    0x0000caef       0xc4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+ .debug_info    0x0000cbb3      0xfa9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+ .debug_info    0x0000db5c     0x1c55 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+ .debug_info    0x0000f7b1      0xdb2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+ .debug_info    0x00010563       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
+ .debug_info    0x00010585      0x7dc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_info    0x00010d61      0x820 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ .debug_info    0x00011581      0x598 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+ .debug_info    0x00011b19      0x32b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+ .debug_info    0x00011e44      0x6af CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+ .debug_info    0x000124f3      0x31c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+ .debug_info    0x0001280f     0x139e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_info    0x00013bad     0x10be CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+ .debug_info    0x00014c6b      0x443 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+ .debug_info    0x000150ae     0x1572 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
+ .debug_info    0x00016620      0x72f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+ .debug_info    0x00016d4f      0x696 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ .debug_info    0x000173e5      0x1ee CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+ .debug_info    0x000175d3      0x31e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+ .debug_info    0x000178f1      0x1eb CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+ .debug_info    0x00017adc      0x392 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+ .debug_info    0x00017e6e      0x1dc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+ .debug_info    0x0001804a      0x2fc CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+ .debug_info    0x00018346      0x2e6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+ .debug_info    0x0001862c      0x84b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+ .debug_info    0x00018e77      0xfc5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+ .debug_info    0x00019e3c      0x22a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+ .debug_info    0x0001a066      0x456 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
 
-.debug_abbrev   0x00000000     0x36b4
+.debug_abbrev   0x00000000     0x36c3
  .debug_abbrev  0x00000000      0x18a cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
  .debug_abbrev  0x0000018a      0x22c cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .debug_abbrev  0x000003b6      0x1e8 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_tmr.c.obj
  .debug_abbrev  0x0000059e      0x218 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj
  .debug_abbrev  0x000007b6      0x24b cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj
  .debug_abbrev  0x00000a01      0x248 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
- .debug_abbrev  0x00000c49       0xe2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_abbrev  0x00000d2b      0x180 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_abbrev  0x00000eab       0xa6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
- .debug_abbrev  0x00000f51      0x1c1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
- .debug_abbrev  0x00001112      0x16c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_abbrev  0x0000127e      0x290 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
- .debug_abbrev  0x0000150e       0x72 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
- .debug_abbrev  0x00001580      0x10e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
- .debug_abbrev  0x0000168e      0x2a5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
- .debug_abbrev  0x00001933      0x118 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
- .debug_abbrev  0x00001a4b       0x12 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
- .debug_abbrev  0x00001a5d      0x1f0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_abbrev  0x00001c4d      0x1a0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- .debug_abbrev  0x00001ded      0x12b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
- .debug_abbrev  0x00001f18       0xd9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
- .debug_abbrev  0x00001ff1      0x119 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
- .debug_abbrev  0x0000210a       0xd9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
- .debug_abbrev  0x000021e3      0x248 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
- .debug_abbrev  0x0000242b      0x18b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
- .debug_abbrev  0x000025b6      0x130 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
- .debug_abbrev  0x000026e6      0x1e1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
- .debug_abbrev  0x000028c7      0x1e6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
- .debug_abbrev  0x00002aad      0x161 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- .debug_abbrev  0x00002c0e       0xba CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
- .debug_abbrev  0x00002cc8       0xcf CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
- .debug_abbrev  0x00002d97       0x9f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
- .debug_abbrev  0x00002e36       0xbd CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
- .debug_abbrev  0x00002ef3       0x9f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
- .debug_abbrev  0x00002f92       0xd6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
- .debug_abbrev  0x00003068       0xe3 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
- .debug_abbrev  0x0000314b      0x236 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
- .debug_abbrev  0x00003381      0x165 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
- .debug_abbrev  0x000034e6       0xd0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
- .debug_abbrev  0x000035b6       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_abbrev  0x00000c49       0xf1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_abbrev  0x00000d3a      0x180 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_abbrev  0x00000eba       0xa6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_abbrev  0x00000f60      0x1c1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ .debug_abbrev  0x00001121      0x16c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_abbrev  0x0000128d      0x290 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+ .debug_abbrev  0x0000151d       0x72 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+ .debug_abbrev  0x0000158f      0x10e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+ .debug_abbrev  0x0000169d      0x2a5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+ .debug_abbrev  0x00001942      0x118 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+ .debug_abbrev  0x00001a5a       0x12 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
+ .debug_abbrev  0x00001a6c      0x1f0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_abbrev  0x00001c5c      0x1a0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ .debug_abbrev  0x00001dfc      0x12b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+ .debug_abbrev  0x00001f27       0xd9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+ .debug_abbrev  0x00002000      0x119 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+ .debug_abbrev  0x00002119       0xd9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+ .debug_abbrev  0x000021f2      0x248 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_abbrev  0x0000243a      0x18b CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+ .debug_abbrev  0x000025c5      0x130 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+ .debug_abbrev  0x000026f5      0x1e1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
+ .debug_abbrev  0x000028d6      0x1e6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+ .debug_abbrev  0x00002abc      0x161 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ .debug_abbrev  0x00002c1d       0xba CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+ .debug_abbrev  0x00002cd7       0xcf CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+ .debug_abbrev  0x00002da6       0x9f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+ .debug_abbrev  0x00002e45       0xbd CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+ .debug_abbrev  0x00002f02       0x9f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+ .debug_abbrev  0x00002fa1       0xd6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+ .debug_abbrev  0x00003077       0xe3 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+ .debug_abbrev  0x0000315a      0x236 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+ .debug_abbrev  0x00003390      0x165 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+ .debug_abbrev  0x000034f5       0xd0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+ .debug_abbrev  0x000035c5       0xfe CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
 
 .debug_aranges  0x00000000      0xe60
  .debug_aranges
@@ -6752,7 +6750,7 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
  .debug_ranges  0x00000b98       0x20 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
  .debug_ranges  0x00000bb8       0x30 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
 
-.debug_macro    0x00000000     0xba1d
+.debug_macro    0x00000000     0xba23
  .debug_macro   0x00000000      0x12c cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
  .debug_macro   0x0000012c      0xa78 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
  .debug_macro   0x00000ba4       0x63 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
@@ -6784,147 +6782,147 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
  .debug_macro   0x00002f87      0x126 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj
  .debug_macro   0x000030ad      0x126 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj
  .debug_macro   0x000031d3      0x12c cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
- .debug_macro   0x000032ff      0x33f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x0000363e       0x5e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x0000369c       0x1e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000036ba       0x94 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x0000374e       0x35 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003783       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000037b7       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000037cd       0x57 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003824       0x97 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000038bb      0x341 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003bfc       0xfd CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003cf9       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003d09       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003d1f       0x43 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003d62       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003d96       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003da6       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003dfe      0x182 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003f80       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003f90       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003fac       0x52 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00003ffe       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004020       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004030       0x52 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004082       0xd5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004157       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004173       0x3d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000041b0       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000041c6      0x16f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004335       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004345       0x8a CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000043cf       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000043eb       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000043fb       0x35 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x00004430      0x4cc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000048fc       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x0000491e       0x7c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x0000499a       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000049aa       0x46 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_macro   0x000049f0      0x23d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004c2d      0x174 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004da1       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004db1       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004dc1       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004dd1       0x35 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004e06      0x12c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004f32       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004f48       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004f5e       0x29 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004f87       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00004f97      0x241 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x000051d8       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x000051f4       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00005204      0x189 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x0000538d       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x000053a3       0xce CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_macro   0x00005471       0xec CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
- .debug_macro   0x0000555d      0x23b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
- .debug_macro   0x00005798      0x284 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
- .debug_macro   0x00005a1c      0x30b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_macro   0x00005d27       0x64 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_macro   0x00005d8b       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_macro   0x00005da1      0x286 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
- .debug_macro   0x00006027      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
- .debug_macro   0x000062b5      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
- .debug_macro   0x00006543      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
- .debug_macro   0x000067d1      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
- .debug_macro   0x00006a5f      0x373 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_macro   0x00006dd2      0x10e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_macro   0x00006ee0       0x8d CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_macro   0x00006f6d       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_macro   0x00006f83       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_macro   0x00006fa5      0x387 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- .debug_macro   0x0000732c      0x3d3 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
- .debug_macro   0x000076ff      0x379 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
- .debug_macro   0x00007a78      0x415 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
- .debug_macro   0x00007e8d      0x37f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
- .debug_macro   0x0000820c      0x2e9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
- .debug_macro   0x000084f5       0x82 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
- .debug_macro   0x00008577      0x2f2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
- .debug_macro   0x00008869      0x2f2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
- .debug_macro   0x00008b5b      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
- .debug_macro   0x00008de9      0x36a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
- .debug_macro   0x00009153      0x37e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- .debug_macro   0x000094d1      0x2be CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
- .debug_macro   0x0000978f      0x39a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
- .debug_macro   0x00009b29      0x364 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
- .debug_macro   0x00009e8d      0x3c4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
- .debug_macro   0x0000a251      0x36a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
- .debug_macro   0x0000a5bb      0x34c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
- .debug_macro   0x0000a907      0x340 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
- .debug_macro   0x0000ac47      0x2ef CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
- .debug_macro   0x0000af36      0x2e9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
- .debug_macro   0x0000b21f      0x2e5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
- .debug_macro   0x0000b504      0x2f4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
- .debug_macro   0x0000b7f8      0x1e5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
- .debug_macro   0x0000b9dd       0x40 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_macro   0x000032ff      0x345 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003644       0x5e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000036a2       0x1e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000036c0       0x94 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003754       0x35 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003789       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000037bd       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000037d3       0x57 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x0000382a       0x97 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000038c1      0x341 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003c02       0xfd CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003cff       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003d0f       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003d25       0x43 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003d68       0x34 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003d9c       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003dac       0x58 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003e04      0x182 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003f86       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003f96       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00003fb2       0x52 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004004       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004026       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004036       0x52 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004088       0xd5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x0000415d       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004179       0x3d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000041b6       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000041cc      0x16f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x0000433b       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x0000434b       0x8a CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000043d5       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000043f1       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004401       0x35 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004436      0x4cc CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004902       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x00004924       0x7c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000049a0       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000049b0       0x46 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_macro   0x000049f6      0x23d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004c33      0x174 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004da7       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004db7       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004dc7       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004dd7       0x35 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004e0c      0x12c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004f38       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004f4e       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004f64       0x29 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004f8d       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00004f9d      0x241 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x000051de       0x1c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x000051fa       0x10 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x0000520a      0x189 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00005393       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x000053a9       0xce CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_macro   0x00005477       0xec CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_macro   0x00005563      0x23b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_macro   0x0000579e      0x284 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ .debug_macro   0x00005a22      0x30b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_macro   0x00005d2d       0x64 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_macro   0x00005d91       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_macro   0x00005da7      0x286 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+ .debug_macro   0x0000602d      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+ .debug_macro   0x000062bb      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+ .debug_macro   0x00006549      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+ .debug_macro   0x000067d7      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+ .debug_macro   0x00006a65      0x373 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_macro   0x00006dd8      0x10e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_macro   0x00006ee6       0x8d CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_macro   0x00006f73       0x16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_macro   0x00006f89       0x22 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_macro   0x00006fab      0x387 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ .debug_macro   0x00007332      0x3d3 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+ .debug_macro   0x00007705      0x379 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+ .debug_macro   0x00007a7e      0x415 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+ .debug_macro   0x00007e93      0x37f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+ .debug_macro   0x00008212      0x2e9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_macro   0x000084fb       0x82 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_macro   0x0000857d      0x2f2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+ .debug_macro   0x0000886f      0x2f2 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+ .debug_macro   0x00008b61      0x28e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
+ .debug_macro   0x00008def      0x36a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+ .debug_macro   0x00009159      0x37e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ .debug_macro   0x000094d7      0x2be CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+ .debug_macro   0x00009795      0x39a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+ .debug_macro   0x00009b2f      0x364 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+ .debug_macro   0x00009e93      0x3c4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+ .debug_macro   0x0000a257      0x36a CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+ .debug_macro   0x0000a5c1      0x34c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+ .debug_macro   0x0000a90d      0x340 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+ .debug_macro   0x0000ac4d      0x2ef CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+ .debug_macro   0x0000af3c      0x2e9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+ .debug_macro   0x0000b225      0x2e5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+ .debug_macro   0x0000b50a      0x2f4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_macro   0x0000b7fe      0x1e5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_macro   0x0000b9e3       0x40 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
 
-.debug_line     0x00000000    0x1487c
+.debug_line     0x00000000    0x14881
  .debug_line    0x00000000      0x610 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
  .debug_line    0x00000610      0xcac cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
  .debug_line    0x000012bc      0xf89 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_tmr.c.obj
  .debug_line    0x00002245      0x91c cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj
  .debug_line    0x00002b61      0x990 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj
  .debug_line    0x000034f1      0x780 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
- .debug_line    0x00003c71      0x842 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
- .debug_line    0x000044b3      0x613 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
- .debug_line    0x00004ac6      0x308 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
- .debug_line    0x00004dce      0x7c6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
- .debug_line    0x00005594      0x88e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
- .debug_line    0x00005e22      0x79b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
- .debug_line    0x000065bd      0x662 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
- .debug_line    0x00006c1f      0x686 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
- .debug_line    0x000072a5      0x6ff CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
- .debug_line    0x000079a4      0x66f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
- .debug_line    0x00008013       0xa9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
- .debug_line    0x000080bc      0xaa3 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
- .debug_line    0x00008b5f      0xb16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
- .debug_line    0x00009675      0xa6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
- .debug_line    0x0000a0e1      0x869 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
- .debug_line    0x0000a94a      0xb21 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
- .debug_line    0x0000b46b      0x85f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
- .debug_line    0x0000bcca      0x7b5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
- .debug_line    0x0000c47f      0x799 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
- .debug_line    0x0000cc18      0x81c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
- .debug_line    0x0000d434      0x6c9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
- .debug_line    0x0000dafd      0xa49 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
- .debug_line    0x0000e546      0xa15 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
- .debug_line    0x0000ef5b      0x6e8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
- .debug_line    0x0000f643      0x8f5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
- .debug_line    0x0000ff38      0x80e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
- .debug_line    0x00010746      0x967 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
- .debug_line    0x000110ad      0x7fd CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
- .debug_line    0x000118aa      0x7fd CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
- .debug_line    0x000120a7      0x847 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
- .debug_line    0x000128ee      0x7af CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
- .debug_line    0x0001309d      0x756 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
- .debug_line    0x000137f3      0x735 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
- .debug_line    0x00013f28      0x954 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+ .debug_line    0x00003c71      0x868 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+ .debug_line    0x000044d9      0x613 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_line    0x00004aec      0x308 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_line    0x00004df4      0x7c6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ .debug_line    0x000055ba      0x88e CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_line    0x00005e48      0x79b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+ .debug_line    0x000065e3      0x662 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+ .debug_line    0x00006c45      0x686 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+ .debug_line    0x000072cb      0x6ff CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+ .debug_line    0x000079ca      0x66f CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+ .debug_line    0x00008039       0xa9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
+ .debug_line    0x000080e2      0xaa3 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_line    0x00008b85      0xb16 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ .debug_line    0x0000969b      0xa6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+ .debug_line    0x0000a107      0x869 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+ .debug_line    0x0000a970      0xb21 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+ .debug_line    0x0000b491      0x85f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+ .debug_line    0x0000bcf0      0x7b5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_line    0x0000c4a5      0x799 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+ .debug_line    0x0000cc3e      0x81c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+ .debug_line    0x0000d45a      0x6c9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
+ .debug_line    0x0000db23      0xa49 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+ .debug_line    0x0000e56c      0xa15 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ .debug_line    0x0000ef81      0x6e8 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+ .debug_line    0x0000f669      0x8f5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+ .debug_line    0x0000ff5e      0x80e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+ .debug_line    0x0001076c      0x967 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+ .debug_line    0x000110d3      0x7fd CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+ .debug_line    0x000118d0      0x7fd CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+ .debug_line    0x000120cd      0x847 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+ .debug_line    0x00012914      0x7af CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+ .debug_line    0x000130c3      0x756 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+ .debug_line    0x00013819      0x735 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+ .debug_line    0x00013f4e      0x933 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
 
-.debug_str      0x00000000    0x1e589
+.debug_str      0x00000000    0x1e5b0
  .debug_str     0x00000000     0xf25f cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj
                                0xf442 (size before relaxing)
  .debug_str     0x0000f25f     0x18a9 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj
@@ -6937,74 +6935,74 @@ LOAD c:/users/altium/appdata/local/at32-tools/gcc-arm-none-eabi/v10.3/bin/../lib
                                0xf716 (size before relaxing)
  .debug_str     0x00013910      0x8ae cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj
                                0xf42b (size before relaxing)
- .debug_str     0x000141be     0x5721 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
-                              0x14395 (size before relaxing)
- .debug_str     0x000198df     0x1733 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
+ .debug_str     0x000141be     0x5748 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj
+                              0x143bc (size before relaxing)
+ .debug_str     0x00019906     0x1733 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj
                                0x8558 (size before relaxing)
- .debug_str     0x0001b012       0xa1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
+ .debug_str     0x0001b039       0xa1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj
                                0x5809 (size before relaxing)
- .debug_str     0x0001b0b3       0x99 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
+ .debug_str     0x0001b0da       0x99 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj
                               0x1384e (size before relaxing)
- .debug_str     0x0001b14c      0x16d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
+ .debug_str     0x0001b173      0x16d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj
                               0x14136 (size before relaxing)
- .debug_str     0x0001b2b9      0x12c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
+ .debug_str     0x0001b2e0      0x12c CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj
                               0x12aa3 (size before relaxing)
- .debug_str     0x0001b3e5       0x5d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
+ .debug_str     0x0001b40c       0x5d CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj
                               0x12670 (size before relaxing)
- .debug_str     0x0001b442       0x65 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
+ .debug_str     0x0001b469       0x65 CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj
                               0x12b73 (size before relaxing)
- .debug_str     0x0001b4a7      0x3dd CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
+ .debug_str     0x0001b4ce      0x3dd CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj
                               0x131a7 (size before relaxing)
- .debug_str     0x0001b884       0x5b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
+ .debug_str     0x0001b8ab       0x5b CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
                               0x12b53 (size before relaxing)
- .debug_str     0x0001b8df       0x5c CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
+ .debug_str     0x0001b906       0x5c CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj
                                  0x98 (size before relaxing)
- .debug_str     0x0001b93b      0x6b4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
+ .debug_str     0x0001b962      0x6b4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj
                               0x148e6 (size before relaxing)
- .debug_str     0x0001bfef      0x41e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
+ .debug_str     0x0001c016      0x41e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj
                               0x14801 (size before relaxing)
- .debug_str     0x0001c40d      0x5d6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
+ .debug_str     0x0001c434      0x5d6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj
                               0x14873 (size before relaxing)
- .debug_str     0x0001c9e3      0x132 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
+ .debug_str     0x0001ca0a      0x132 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj
                               0x1450a (size before relaxing)
- .debug_str     0x0001cb15      0x690 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
+ .debug_str     0x0001cb3c      0x690 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj
                               0x14bc9 (size before relaxing)
- .debug_str     0x0001d1a5       0xc9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
+ .debug_str     0x0001d1cc       0xc9 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj
                               0x14526 (size before relaxing)
- .debug_str     0x0001d26e      0x113 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
+ .debug_str     0x0001d295      0x113 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj
                               0x14280 (size before relaxing)
- .debug_str     0x0001d381      0x13f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
+ .debug_str     0x0001d3a8      0x13f CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj
                               0x1431b (size before relaxing)
- .debug_str     0x0001d4c0      0x1b1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
+ .debug_str     0x0001d4e7      0x1b1 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj
                               0x1410d (size before relaxing)
- .debug_str     0x0001d671       0xb4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
+ .debug_str     0x0001d698       0xb4 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
                               0x12d68 (size before relaxing)
- .debug_str     0x0001d725      0x1c0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
+ .debug_str     0x0001d74c      0x1c0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj
                               0x1467a (size before relaxing)
- .debug_str     0x0001d8e5      0x171 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
+ .debug_str     0x0001d90c      0x171 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj
                               0x14532 (size before relaxing)
- .debug_str     0x0001da56       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
+ .debug_str     0x0001da7d       0x6c CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj
                               0x13b64 (size before relaxing)
- .debug_str     0x0001dac2      0x209 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
+ .debug_str     0x0001dae9      0x209 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj
                               0x144b5 (size before relaxing)
- .debug_str     0x0001dccb       0xcb CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
+ .debug_str     0x0001dcf2       0xcb CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj
                               0x1429b (size before relaxing)
- .debug_str     0x0001dd96      0x313 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
+ .debug_str     0x0001ddbd      0x313 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj
                               0x146c5 (size before relaxing)
- .debug_str     0x0001e0a9       0x6e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
+ .debug_str     0x0001e0d0       0x6e CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj
                               0x142c2 (size before relaxing)
- .debug_str     0x0001e117       0xc6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
+ .debug_str     0x0001e13e       0xc6 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj
                               0x143cb (size before relaxing)
- .debug_str     0x0001e1dd       0xf5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
+ .debug_str     0x0001e204       0xf5 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj
                               0x13f16 (size before relaxing)
- .debug_str     0x0001e2d2       0xba CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
+ .debug_str     0x0001e2f9       0xba CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj
                               0x1407a (size before relaxing)
- .debug_str     0x0001e38c       0xa0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
+ .debug_str     0x0001e3b3       0xa0 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj
                               0x1409a (size before relaxing)
- .debug_str     0x0001e42c       0x80 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
+ .debug_str     0x0001e453       0x80 CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj
                               0x13e5d (size before relaxing)
- .debug_str     0x0001e4ac       0xdd CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
-                              0x140a8 (size before relaxing)
+ .debug_str     0x0001e4d3       0xdd CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj
+                              0x1406e (size before relaxing)
 
 .comment        0x00000000       0x49
  .comment       0x00000000       0x49 cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj

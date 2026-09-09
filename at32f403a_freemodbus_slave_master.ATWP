@@ -62,9 +62,8 @@
             <ModeSub name="Mode" value="Asynchronous"/>
         </Mode>
         <Parameters>
-            <ParametersSub name="BaudRate" value="9600"/>
-            <ParametersSub name="RealBaudRate" value="9600"/>
-            <ParametersSub name="STOPbitnum" value="USART_STOP_2_BIT"/>
+            <ParametersSub name="BaudRate" value="19200"/>
+            <ParametersSub name="RealBaudRate" value="19200"/>
         </Parameters>
     </USART2>
     <USART6>

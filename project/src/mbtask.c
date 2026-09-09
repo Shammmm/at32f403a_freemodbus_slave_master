@@ -29,49 +29,49 @@ extern flag_status flag_init;
 
 void modbus_task(void)
 {
-  eMBErrorCode    eStatus;
+//   eMBErrorCode    eStatus;
   
- /* ucPort: select port_uart.
-  * this parameter can be one of the following values:
-  * 0: USART2: tx--PA2,  rx--PA3,  de--PA1;
-  * 1: USART3: tx--PB10, rx--PB11, de--PB14;
-  * other: invalid.
-  */
-  //eStatus = eMBInit(MB_RTU, bytMbSlaveAddress , 0, MB_BAUDRATE, MB_PAR_NONE);
-  eStatus = eMBInit(MB_RTU, MB_SLAVE_ADDRESS, 1, MB_BAUDRATE, MB_PAR_NONE);
+//  /* ucPort: select port_uart.
+//   * this parameter can be one of the following values:
+//   * 0: USART2: tx--PA2,  rx--PA3,  de--PA1;
+//   * 1: USART3: tx--PB10, rx--PB11, de--PB14;
+//   * other: invalid.
+//   */
+//   //eStatus = eMBInit(MB_RTU, bytMbSlaveAddress , 0, MB_BAUDRATE, MB_PAR_NONE);
+//   eStatus = eMBInit(MB_RTU, MB_SLAVE_ADDRESS, 1, MB_BAUDRATE, MB_PAR_NONE);
 
-  if(MB_ENOERR == eStatus)
-  {
-    printf("modbus init ok\r\n");
-    eStatus = eMBEnable();
-    if(MB_ENOERR == eStatus)
-    {
-      printf("modbus enable ok\r\n");
-    }
-    else
-    {
-      printf("modbus enable fail, error code: %u\r\n", eStatus);
-    }
-  }
-  else
-  {
-    printf("modbus init fail, error code: %u\r\n", eStatus);
-  }
+//   if(MB_ENOERR == eStatus)
+//   {
+//     printf("modbus init ok\r\n");
+//     eStatus = eMBEnable();
+//     if(MB_ENOERR == eStatus)
+//     {
+//       printf("modbus enable ok\r\n");
+//     }
+//     else
+//     {
+//       printf("modbus enable fail, error code: %u\r\n", eStatus);
+//     }
+//   }
+//   else
+//   {
+//     printf("modbus init fail, error code: %u\r\n", eStatus);
+//   }
   
-  if(MB_ENOERR != eStatus)
-  {
-    printf("exit modbus task.\r\n");
-    return;
-  }
+//   if(MB_ENOERR != eStatus)
+//   {
+//     printf("exit modbus task.\r\n");
+//     return;
+//   }
     
-  printf("start modbus pooling..\r\n");
+//   printf("start modbus pooling..\r\n");
 
 
 
-  for(;;){
-    eMBPoll();
+//   for(;;){
+//     eMBPoll();
     
-  }
+//   }
 }
 
 

@@ -52,7 +52,7 @@
 
 /* private define ------------------------------------------------------------*/
 /* add user code begin private define */
-
+#define MB_MASTER_CNT_MAX 100000
 /* add user code end private define */
 
 /* private macro -------------------------------------------------------------*/
@@ -66,6 +66,7 @@ USHORT usRegInputBuf[REG_INPUT_NREGS] = {0};
 USHORT usRegHoldingBuf[REG_HOLDING_NREGS] = {0} ;
 UCHAR  ucRegCoilsBuf[REG_COILS_SIZE / 8] = {0} ;
 UCHAR  ucRegDiscreteBuf[REG_DISCRETE_SIZE / 8] = {0} ;
+
 /* add user code end private variables */
 
 /* private function prototypes --------------------------------------------*/
@@ -86,7 +87,7 @@ UCHAR  ucRegDiscreteBuf[REG_DISCRETE_SIZE / 8] = {0} ;
 int main(void)
 {
   /* add user code begin 1 */
-
+  u32 cnt_mb_master = 0;
   /* add user code end 1 */
 
   /* system clock config. */
@@ -129,7 +130,10 @@ int main(void)
   //  MT_PORT_SetUartModule(TMR3);
      printf("Start Modbus master\r\n");
    eMBErrorCode eStatus;
-   eStatus = eMBMasterInit(MB_RTU, 0, 9600, MB_PAR_NONE);
+    eStatus = eMBInit(MB_RTU, MB_SLAVE_ADDRESS, 1, MB_BAUDRATE, MB_PAR_NONE);
+
+
+   eStatus = eMBMasterInit(MB_RTU, 0, 19200, MB_PAR_NONE);
    printf("Init Modbus master\r\n");
    eStatus = eMBMasterEnable();
    wk_delay_ms(500);
@@ -139,17 +143,50 @@ int main(void)
     printf("Modbus master error\r\n");
    // Error handling
    }
-    /*modbus slave*/ 
-    modbus_task(); 
+
+   if(MB_ENOERR == eStatus)
+  {
+    printf("modbus init ok\r\n");
+    eStatus = eMBEnable();
+    if(MB_ENOERR == eStatus)
+    {
+      printf("modbus enable ok\r\n");
+    }
+    else
+    {
+      printf("modbus enable fail, error code: %u\r\n", eStatus);
+    }
+  }
+  else
+  {
+    printf("modbus init fail, error code: %u\r\n", eStatus);
+  }
+  
+  if(MB_ENOERR != eStatus)
+  {
+    printf("exit modbus task.\r\n");
+    return;
+  }
+    
+  printf("start modbus slave pooling..\r\n");
+
+
   /* add user code end 2 */
 
   while(1)
   {
     /* add user code begin 3 */
-    eMBMasterPoll();
-    eMBMasterReqWriteHoldingRegister(0x01, 0x1, 0x2, 1000);
-    wk_delay_ms(100);
-    printf("Modbus master\r\n");
+    eMBPoll(); // MB Slave
+    cnt_mb_master++;
+    if(cnt_mb_master > MB_MASTER_CNT_MAX )
+    {
+      eMBMasterPoll(); //MB Master
+      eMBMasterReqWriteHoldingRegister(0x01, 0x1, 0x2, 1000);
+      cnt_mb_master = 0;
+    }
+
+    
+
     /* add user code end 3 */
   }
 }
