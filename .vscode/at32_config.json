@@ -5,8 +5,11 @@
   "verify": true,
   "resetAndRun": true,
   "usbMode": "WinUSB",
+  "dapInterface": "3",
+  "autoLinkerScript": true,
   "customCfgFiles": [
     "scripts/target/at32f403axx.cfg"
   ],
-  "customFlmFiles": []
+  "customFlmFiles": [],
+  "jlinkPath": ""
 }

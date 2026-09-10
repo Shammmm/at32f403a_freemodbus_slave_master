@@ -35,7 +35,7 @@ rule C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__at32f403a_freemodbus_slave_master_Debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\Users\Altium\AppData\Local\at32-tools\gcc-arm-none-eabi\V10.3\bin\arm-none-eabi-gcc.exe $FLAGS -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "D:/vscode-workspace/at32f403a_freemodbus_slave_master/AT32F403AxG_FLASH.ld" --specs=nano.specs -Wl,-Map=at32f403a_freemodbus_slave_master.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\Users\Altium\AppData\Local\at32-tools\gcc-arm-none-eabi\V10.3\bin\arm-none-eabi-gcc.exe $FLAGS -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T "D:/vscode-workspace/at32f403a_freemodbus_slave_master/AT32F403AxG_FLASH.ld" -Wl,--gc-sections -Wl,--print-memory-usage --specs=nano.specs -Wl,-Map=at32f403a_freemodbus_slave_master.map -Wl,--start-group -lc -lm -Wl,--end-group $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 

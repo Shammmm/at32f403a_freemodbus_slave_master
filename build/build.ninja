@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_at32f403a_freemodbus_slave_master: phony
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/main.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\main.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -62,7 +62,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj: C
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/syscalls.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\syscalls.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -72,7 +72,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.ob
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/sysmem.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\sysmem.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -82,7 +82,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj:
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/at32f403a_407_wk_config.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\at32f403a_407_wk_config.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -92,7 +92,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/at32f403a_407_int.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\at32f403a_407_int.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -102,7 +102,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/wk_system.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\wk_system.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -112,7 +112,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.o
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/wk_debug.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\wk_debug.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -122,7 +122,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.ob
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/wk_tmr.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\wk_tmr.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -132,7 +132,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj:
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/wk_usart.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\wk_usart.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -142,7 +142,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.ob
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/wk_gpio.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\wk_gpio.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -152,7 +152,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj: ASM_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/startup_at32f403a_407.s || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\startup_at32f403a_407.s.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -x assembler-with-cpp -MMD -MP -g
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
@@ -162,7 +162,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.o
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/mb_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\mb_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus
@@ -172,7 +172,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj: C_COMP
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu/mbrtu_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\rtu\mbrtu_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\rtu
@@ -182,7 +182,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj:
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfunccoils_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfunccoils_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -192,7 +192,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncco
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncdisc_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncdisc_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -202,7 +202,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdi
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncholding_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncholding_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -212,7 +212,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncho
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncinput_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncinput_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -222,7 +222,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncin
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/portserial_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\portserial_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -232,7 +232,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/porttimer_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\porttimer_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -242,7 +242,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/portevent_m.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\portevent_m.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -252,7 +252,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/mt_port.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\mt_port.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -262,7 +262,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/mb.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\mb.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus
@@ -272,7 +272,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj: C_COMPIL
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu/mbrtu.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\rtu\mbrtu.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\rtu
@@ -282,7 +282,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj: C
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu/mbcrc.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\rtu\mbcrc.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\rtu
@@ -292,7 +292,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj: C
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfunccoils.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfunccoils.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -302,7 +302,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncco
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncdisc.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncdisc.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -312,7 +312,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdi
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncholding.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncholding.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -322,7 +322,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncho
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncinput.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncinput.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -332,7 +332,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncin
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbfuncother.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbfuncother.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -342,7 +342,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncot
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions/mbutils.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions\mbutils.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus\functions
@@ -352,7 +352,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/portserial.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\portserial.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -362,7 +362,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/porttimer.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\porttimer.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -372,7 +372,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.o
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port/portevent.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port\portevent.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\modbus_port
@@ -382,7 +382,7 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.o
 build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj: C_COMPILER__at32f403a_freemodbus_slave_master_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/project/src/mbtask.c || cmake_object_order_depends_target_at32f403a_freemodbus_slave_master
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src\mbtask.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/include -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus_port -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/ascii -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/functions -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/modbus/rtu -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
   OBJECT_FILE_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir\project\src
@@ -398,9 +398,9 @@ build CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj:
 # Link the executable at32f403a_freemodbus_slave_master.elf
 
 build at32f403a_freemodbus_slave_master.elf: C_EXECUTABLE_LINKER__at32f403a_freemodbus_slave_master_Debug cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_tmr.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_pwc.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_flash.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_debug.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/main.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/syscalls.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/sysmem.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_wk_config.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/at32f403a_407_int.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_system.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_debug.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_tmr.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_usart.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/wk_gpio.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/startup_at32f403a_407.s.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent_m.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/mt_port.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/mb.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbrtu.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/rtu/mbcrc.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfunccoils.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncdisc.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncholding.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncinput.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbfuncother.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus/functions/mbutils.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portserial.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/porttimer.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/modbus_port/portevent.c.obj CMakeFiles/at32f403a_freemodbus_slave_master.dir/project/src/mbtask.c.obj || cmake/at32_workbench/AT32_Drivers
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3
   OBJECT_DIR = CMakeFiles\at32f403a_freemodbus_slave_master.dir
-  POST_BUILD = cd .
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D D:\vscode-workspace\at32f403a_freemodbus_slave_master\build && arm-none-eabi-objcopy -O ihex at32f403a_freemodbus_slave_master.elf at32f403a_freemodbus_slave_master.hex && arm-none-eabi-objcopy -O binary at32f403a_freemodbus_slave_master.elf at32f403a_freemodbus_slave_master.bin"
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = CMakeFiles\at32f403a_freemodbus_slave_master.dir\
   TARGET_FILE = at32f403a_freemodbus_slave_master.elf
@@ -447,7 +447,7 @@ build cmake_object_order_depends_target_AT32_Drivers: phony || .
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4/device_support/system_at32f403a_407.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support/system_at32f403a_407.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\cmsis\cm4\device_support\system_at32f403a_407.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\cmsis\cm4\device_support
@@ -457,7 +457,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/cmsis/cm4
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_crm.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_crm.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_crm.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -467,7 +467,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_tmr.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_tmr.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_tmr.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -477,7 +477,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_gpio.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_gpio.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_gpio.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -487,7 +487,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_usart.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_usart.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_usart.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -497,7 +497,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_pwc.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_pwc.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_pwc.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -507,7 +507,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_flash.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_flash.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_flash.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -517,7 +517,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_misc.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_misc.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_misc.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
@@ -527,7 +527,7 @@ build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/s
 build cmake/at32_workbench/CMakeFiles/AT32_Drivers.dir/__/__/libraries/drivers/src/at32f403a_407_debug.c.obj: C_COMPILER__AT32_Drivers_unscanned_Debug D$:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/src/at32f403a_407_debug.c || cmake_object_order_depends_target_AT32_Drivers
   DEFINES = -DAT32F403AVGT7 -DDEBUG -DUSE_STDPERIPH_DRIVER
   DEP_FILE = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src\at32f403a_407_debug.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wall -Wextra -O0 -g3 -std=gnu11
   INCLUDES = -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/project/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/drivers/inc -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/core_support -ID:/vscode-workspace/at32f403a_freemodbus_slave_master/libraries/cmsis/cm4/device_support
   OBJECT_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir
   OBJECT_FILE_DIR = cmake\at32_workbench\CMakeFiles\AT32_Drivers.dir\__\__\libraries\drivers\src
